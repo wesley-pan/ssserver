@@ -8,5 +8,5 @@ echo " Please remember the password!"
 echo "========================================================================"
 
 
-ssserver --version
-ssserver -s $SS_SERVER_ADDR -p $SS_SERVER_PORT -k $SS_PASSWORD -m $SS_METHOD -t $SS_TIMEOUT
+# ss-server --version
+ss-server -s $SS_SERVER_ADDR -p $SS_SERVER_PORT -k $SS_PASSWORD -m $SS_METHOD -t $SS_TIMEOUT -u
