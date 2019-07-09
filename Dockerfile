@@ -4,11 +4,14 @@ MAINTAINER wes <wes.pxw@gmail.com>
 
 RUN apt-get update && \
     apt-get upgrade -y &&\
-    apt-get install -y -m python3-pip python-m2crypto &&\
+#   apt-get install -y -m python3-pip python-m2crypto &&\
+    apt-get install shadowsocks-libev &&\
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
+# RUN pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
+
+
 
 ENV SS_SERVER_ADDR 0.0.0.0
 ENV SS_SERVER_PORT 8388
