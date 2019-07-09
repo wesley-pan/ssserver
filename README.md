@@ -12,7 +12,7 @@ If you want to use a preset configration instead of a default, you can set the e
 * password: $SS_PASSWORD default password
 * encryption method: $SS_METHOD default aes-256-cfb
 * timeout: $SS_TIMEOUT default 300
-* Shadowsocks: https://github.com/shadowsocks/shadowsocks/archive/master.zip
+* Shadowsocks: shadowsocks-libev
 
 
 Usage
