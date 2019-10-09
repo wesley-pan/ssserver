@@ -13,7 +13,7 @@ RUN apt-get update && \
 # RUN pip3 install https://github.com/shadowsocks/shadowsocks/archive/master.zip
 
 ENV SS_SERVER_ADDR 0.0.0.0
-ENV SS_SERVER_PORT 8388
+ENV SS_SERVER_PORT 54321
 ENV SS_PASSWORD Passw0rd!
 ENV SS_METHOD aes-256-cfb
 ENV SS_TIMEOUT 300
