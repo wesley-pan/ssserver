@@ -5,8 +5,9 @@ MAINTAINER wes <wes.pxw@gmail.com>
 RUN apt-get update && \
 #   apt-get install -y --no-install-recommends apt-utils && \
     apt-get upgrade -y && \
-#   apt-get install -y -m python3-pip python-m2crypto &&\
-    snap install shadowsocks-libev && \
+#   apt-get install -y -m python3-pip python-m2crypto && \
+#   apt-get install shadowsocks-libev && \
+    apt-get install snapd && snap install shadowsocks-libev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
