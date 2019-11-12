@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
 #   apt-get install -y -m python3-pip python-m2crypto && \
     apt-get install -y snapd && \
-    snap install -y shadowsocks-libev && \
+    snap install shadowsocks-libev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
